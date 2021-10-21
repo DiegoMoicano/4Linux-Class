@@ -10,4 +10,3 @@ elif media >= 4:
     print(f"Recuperação")
 else:
     print(f"Retido")
-

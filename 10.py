@@ -1,5 +1,5 @@
 operacoes = {
-    "soma": lambda x, y: x + y,
+    "adicao": lambda x, y: x + y,
     "subtracao": lambda x, y: x - y,
     "divisao": lambda x, y: x / y,
     "multiplicacao": lambda x, y: x * y
@@ -8,7 +8,7 @@ operacoes = {
 
 def menu():
     print("""
-        0 soma
+        0 adicao
         1 subtracao
         2 divisao
         3 multiplicacao
@@ -25,13 +25,17 @@ while True:
     op = input("Digite a operação: ")
 
     if op == "0":
-        print(operacoes["soma"](x, y))
+        resultado = operacoes["adicao"](x, y)
+        print(f"O resultado de {x} + {y} é {resultado}")
     elif op == "1":
-        print(operacoes["subtracao"](x, y))
+        resultado = operacoes["subtracao"](x, y)
+        print(f"O resultado de {x} - {y} é {resultado}")
     elif op == "2":
-        print(operacoes["divisao"](x, y))
+        resultado = operacoes["divisao"](x, y)
+        print(f"O resultado de {x} / {y} é {resultado}")
     elif op == "3":
-        print(operacoes["multiplicacao"](x, y))
+        resultado = operacoes["multiplicacao"](x, y)
+        print(f"O resultado de {x} x {y} é {resultado}")
     elif op == "4":
         x = float(input("Digite o primeiro número: "))
         y = float(input("Digite o segundo número: "))

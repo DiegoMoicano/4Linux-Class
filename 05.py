@@ -6,4 +6,4 @@ elif 1979 <= nasc >= 1965:
     print("Geração X")
 elif 1994 <= nasc >= 1980:
     print("Geração Y")
-elif 
+elif

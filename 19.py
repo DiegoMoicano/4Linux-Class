@@ -13,30 +13,28 @@ print("")
 carne_tipo = input("Escolha a carne que quer comprar: ")
 quantidade_carne = float(input("Quantos kilos quer: "))
 
+total = 0
 if carne_tipo == "1":
     if quantidade_carne <= 5:
         total = 4.9 * quantidade_carne
-        print(f"Total {total}")
     elif quantidade_carne > 5:
         total = 5.8 * quantidade_carne
-        print(f"Total {total}")
 elif carne_tipo == "2":
     if quantidade_carne <= 5:
         total = 5.9 * quantidade_carne
-        print(f"Total {total}")
     elif quantidade_carne > 5:
         total = 6.8 * quantidade_carne
-        print(f"Total {total}")
 elif carne_tipo == "3":
     if quantidade_carne <= 5:
         total = 6.9 * quantidade_carne
-        print(f"Total {total}")
     elif quantidade_carne > 5:
         total = 7.8 * quantidade_carne
-        print(f"Total {total}")
+print(f"Total {total}")
 
 cartao = input("\nVai pagar com cartão? (S/N): ")
 if cartao.upper() == "S":
     print("Ganhou 5% de desconto")
+    total = total - (total * 0.05)
+    print(f"A carne vai custar agora {total}")
 else:
     print("Nada de desconto")

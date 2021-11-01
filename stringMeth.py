@@ -61,3 +61,5 @@ print(string1.title())  # coloca a primeira letra em maiúscula >> string.title(
 
 print(string1.upper())  # converte tudo em maiúsculo >> string.upper()
 print(string2.zfill(20))  # add zeros 0 no início >> string.zfill(len)
+
+# Nota: Todos os métodos de string retornam novos valores. Eles não mudam a string original.

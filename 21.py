@@ -2,7 +2,7 @@ print("Digite 5 (cinco) números inteiros e veja qual é o maior deles!")
 
 
 while True:
-    num0 = input("Digite '-1' para finalizar ou 'Enter' para continuar...: ")
+    op = input("Digite 'F' para finalizar ou 'C' para continuar...: ")
     num1 = int(input("Digite o primeiro número inteiro: "))
     num2 = int(input("Digite o segundo número inteiro: "))
     num3 = int(input("Digite o terceiro número inteiro: "))
@@ -18,5 +18,7 @@ while True:
         print(f"Número {num4} é o maior de todos!")
     elif num5 > num1 and num5 > num2 and num5 > num3 and num5 > num4:
         print(f"Número {num5} é o maior de todos!")
-    elif num0 == '-1':
-        break
+        if op.upper() == 'C':
+            continue
+        else:
+            break
